@@ -1,0 +1,20 @@
+{
+  "name": "Arcana-Jekyll-Theme",
+  "scripts": {},
+  "env": {
+    "LANG": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
