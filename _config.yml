@@ -5,5 +5,5 @@ paginate: 10
 
 #My Stuff
 gems: ['jekyll-paginate']
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile', 'app.json']
 
