@@ -7,6 +7,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+  --header-bar-color: #b44f51;
+}
+
 /* Basic */
 
 	body,
@@ -47,7 +51,7 @@
 	}
 
 		a:hover {
-			color: #37c0fb;
+			color: var(--header-bar-color); /*#37c0fb;*/
 			border-bottom-color: transparent;
 		}
 
@@ -104,7 +108,7 @@
 
 	hr {
 		border-top: solid 1px #e0e0e0;
-		border: 0;
+		border: 1;
 		margin-bottom: 1.5em;
 	}
 
@@ -644,7 +648,7 @@
 						bottom: -0.5em;
 						left: 50%;
 						margin-left: -0.375em;
-						background-color: #37c0fb;
+						background-color: #b44f51; /* #37c0fb; current color*/
 						background-image: url("images/bg01.png");
 					}
 
