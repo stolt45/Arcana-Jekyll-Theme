@@ -11,16 +11,23 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
-		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
-		<noscript>
+ 		<noscript>
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
 		</noscript>
+ 
+
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+		<!--<noscript>
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+    </noscript>-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
@@ -35,7 +42,7 @@
 					<nav id="nav">
 						<ul>
 							{% assign current = page.url | downcase | split: '/' %}
-                                                        <li {% if current[1] == 'about.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
+              <li {% if current[1] == 'about.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
 							<!--<li {% if current[1] == 'about.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about.html"></a></li>
 							<li>
 								<a href="">About</a>
@@ -57,10 +64,10 @@
 								</ul>
 							</li>-->
 							<!--<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>-->
-							<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Solutions</a></li>
+							<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/solutions.html">Solutions</a></li>
 							<!--<li {% if current[3] == 'right-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Clients</a></li>-->
-							<li {% if current[1] == 'two-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/two-sidebar.html">Portfolio</a></li>
-							<li {% if current[1] == 'no-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">Contact</a></li>
+              <!--<li {% if current[1] == 'two-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/two-sidebar.html">Portfolio</a></li>-->
+							<li {% if current[1] == 'no-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
 						</ul>
 					</nav>
 
